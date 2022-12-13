@@ -18,18 +18,33 @@ html, body {
 
 #top {
     background-image: url('../img/top/top.jpg');
-    width: 1920px;
-    height: 1280px;
+    width: 100%;
+    height: 1283px;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-.title {
+#top .title {
     position: absolute;
-    top: 960px;
-    left: 950px;
+    top: 770px;
+    left: 965px;
 }
 
 .lead {
     position: absolute;
-    top: 1220px;
-    left: 940px;
+    top: 1050px;
+    left: 900px;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+#navbar {
+    background-color: #fee6f1;
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
 }
