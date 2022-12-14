@@ -47,7 +47,7 @@
         background-color: #fee6f1;
         border-radius: 15px;
         padding: 25px 10px;
-        margin: 60px 250px 15px;
+        margin: 60px 250px 20px;
         box-shadow: 5px 5px 5px grey;
         gap: 5px;
         display: flex;
@@ -100,9 +100,27 @@
     #summary h2 img {
         position: absolute;
         top: 14%;
-        margin-left: 1500px;
+        right: 7%;
     }
 
+    .slideshow-container {
+        max-width: 1300px;
+        position: relative;
+        margin: auto;
+    }
+
+    .slideshow-hotel img {
+        position: absolute;
+    }
+    .caption {
+        color: black;
+        opacity: 90%;
+        line-height: 2;
+        font-size: 27px;
+        text-align: left;
+        position: absolute;
+        right: 5%;
+    }
 
 
 
