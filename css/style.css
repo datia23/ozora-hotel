@@ -1,50 +1,109 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@media only screen and (min-width: 1024px) {
 
-html, body {
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    width: 100%;
-}
+    .pc {
+        display: block;
+    }
 
-.logo {
-    background-color: white;
-    padding-left: 100px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
+    .sp {
+        display: none;
+    }
 
-#top {
-    background-image: url('../img/top/top.jpg');
-    width: 100%;
-    height: 1283px;
-    background-repeat: no-repeat;
-    position: relative;
-}
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-#top .title {
-    position: absolute;
-    top: 770px;
-    left: 965px;
-}
+    html, body {
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        width: 100%;
+    }
 
-.lead {
-    position: absolute;
-    top: 1050px;
-    left: 900px;
-}
+    .logo {
+        background-color: white;
+        padding-left: 100px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 
-ul[class],
-ol[class] {
-    list-style: none;
-}
+    #top {
+        position: relative;background-image: url('../img/top.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 1283px;
+        margin: 0 auto;
+    }
 
-#navbar {
-    background-color: #fee6f1;
-    width: 1000px;
-    height: 100px;
-    display: flex;
-    justify-content: space-evenly;
+    #top h1 img {
+        position: absolute;
+        margin: 0 auto;
+        width: auto;
+        bottom: 5%;
+        right: 1%;
+    }
+
+    #navbar ul {
+        background-color: #fee6f1;
+        border-radius: 15px;
+        padding: 25px 1px;
+        margin: 60px 280px 10px;
+        box-shadow: 5px 5px 5px grey;
+        gap: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #navbar ul li {
+        list-style: none;
+        border-right: dashed 3px #ae3f57;
+        padding-right: 50px;
+    }
+
+    #navbar ul li.no-border {
+        list-style: none;
+        border-right: 0px;
+        padding-right: 0px;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        font-size: 28px;
+        color: #ae3f57;
+    }
+
+    #navbar a:hover {
+        color: white;
+    }
+
+    .nav-scroll {
+        position: sticky;
+        top: 50px;
+    }
+
+    #summary {
+        background-image: url('../img/bg-hotel.png');
+        position: relative;
+        background-size: cover;
+        height: 2046px;
+        margin-top: -150px;
+        z-index: -1;
+    }
+
+    #summary h1 img {
+        position: absolute;
+        top: 15%;
+        margin-left: 600px;
+    }
+
+    #summary h2 img {
+        position: absolute;
+        top: 14%;
+        margin-left: 1500px;
+    }
+
+
+
+
 }
