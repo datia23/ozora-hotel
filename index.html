@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html lang="jp">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
     <title>大空ホテルカンダ神保町</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: left;
+            font-size: 18px;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            width: 639px;
+            height: auto;
+        }
+    </style>
 </head>
+
 <body>
     <!--top start-->
     <div class="logo">
-        <img src="img/logo.png" width="80px" height="auto"> 
-        <!-- <img class="sp  navbar-sp" src=""> -->
+        <img src="img/logo.png" width="80px" height="auto">
+        <img class="sp  navbar-sp" src="">
     </div>
     <div id="top">
         <h1>
@@ -49,26 +98,88 @@
             </li>
         </ul>
     </div>
-<!--navbar pc end-->
+    <!--navbar pc end-->
 
-<!--content start-->
+    <!--content start-->
     <div id="summary">
         <h1>
             <img src="img/title-hotel.png" alt="充実のホテル滞在">
         </h1>
         <h2>
-            <img src="img/lead-hotel.png" alt="ファミリーや
-            グループで
-            ゆったり">
-            <img class="sp" src=" " alt="ファミリーや
-            グループで
-            ゆったり">
+            <img src="img/lead-hotel.png" alt="ファミリーやグループでゆったり">
+            <img class="sp" src=" " alt="ファミリーやグループでゆったり">
         </h2>
-        <!-- <div class="slideshow-container">
-            <div class="slideshow-hotel">
-                <img src="img/pic1-hotel.png" style="width: 639px;">
-                <p class="caption">大空リゾート®からは無料のシャトルバスに<br>よるアクセスも可能です。ホテルに到着したら<br>フロントでチェックインをお済ませ下さい。</p>
-        </div> -->
+
+        <!--swiper
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/pic1-hotel.png">
+                    <p>大空リゾート®からは無料のシャトルバスに<br>よるアクセスも可能です。ホテルに到着したら<br>フロントでチェックインをお済ませ下さい。</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/pic2-hotel.png">
+                    <p>客室は全室広々設計で、ファミリーや<br>グループみんなでくつろげます。また、全室がバス・<br>トイレ別で、洗い場付きのお風呂はお子様がいるファミリーにご好評です。</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/pic3-hotel.png">
+                    <p>館内には、お子様連れのご家族はもちろん、<br>さまざまな年代の方が快適に過ごしていただける<br>施設やサービスをご用意しています。</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/pic4-hotel.png">
+                    <p>ホテルの目の前には市内唯一の総合公園<br>「浦安市総合公園」があり、海を眺めながら<br>芝生の上で遊んだりくつろいだりできます。</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/pic5-hotel.png">
+                    <p>最上階の7階には、宿泊者限定でご利用できる<br>大浴場を用意。海を一望できる大浴場で、<br>ご家族みんなで癒やされて下さい。<br>
+                        ※小学1年生以上の方は、男女別のご利用とさせていただきます。</p>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        </script>-->
+
+        <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/pic1-hotel.png">
+                <p>大空リゾート®からは無料のシャトルバスに<br>よるアクセスも可能です。ホテルに到着したら<br>フロントでチェックインをお済ませ下さい。</p>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
     </div>
 </body>
+
 </html>
