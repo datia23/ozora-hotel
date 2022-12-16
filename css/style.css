@@ -83,6 +83,7 @@
     .nav-scroll {
         position: sticky;
         top: 50px;
+        z-index: 10;
     }
 
     #summary {
@@ -106,6 +107,7 @@
         right: 7%;
     }
 
+    /* swiper */
     .swiper {
         width: 100%;
         height: 35%;
@@ -117,6 +119,7 @@
         font-size: 22px;
         line-height: 2.5;
         gap: 50px;
+        align-items: center;
 
         /* Center slide text vertically */
         display: -webkit-box;
@@ -136,5 +139,161 @@
     .swiper-slide img {
         height: auto;
     }
+
+    /*plan hotel*/
+    .htl-btn-wrapper {
+        width: 1132px;
+        margin: 220px auto;
+    }
+
+    .plan-htl-1 {
+        background-image: url('../img/plan1-htl.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 234px;
+    }
+
+    .plan-htl-1 p {
+        text-align: center;
+        font-size: 22px;
+        padding-top: 40px;
+        line-height: 2;
+        letter-spacing: 2px;
+    }
+
+    .button img {
+        margin: 10px 400px;
+    }
+
+    .button img:hover {
+        transform: scale(1.1)
+    }
+
+    .plan-htl-2 {
+        background-image: url('../img/plan2-htl.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 234px;
+        margin-top: 80px;
+    }
+
+    .plan-htl-2 p {
+        text-align: center;
+        font-size: 22px;
+        padding-top: 40px;
+        line-height: 2;
+        letter-spacing: 2px;
+    }
+
+    /*mama papa*/
+    #mama-papa {
+        position: relative;
+        background-image: url('../img/bg-mama.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 2060px;
+        margin-top: -70px;
+    }
+
+    #mama-papa h1 img {
+        margin-left: 370px;
+        width: 645px;
+        margin-top: -20px;
+    }
+
+    .collage-bby {
+        width: 1150px;
+        margin: 0 auto;
+    }
+    
+    .collage-1 img {
+        position: absolute;
+        right: 375px;
+        top: 20%;
+        border: dashed #37212b 2px;
+        padding: 15px;
+        width: 490px;
+        height: 327px;
+    }
+
+    .collage-2 img {
+        position: absolute;
+        left: 375px;
+        top: 25%;
+        border: dashed #37212b 2px;
+        padding: 15px;
+        width: 490px;
+        height: 327px;
+    }
+
+    .collage-3 img {
+        position: absolute;
+        right: 375px;
+        top: 42%;
+        border: dashed #37212b 2px;
+        padding: 15px;
+        width: 490px;
+        height: 327px;
+    }
+
+    .collage-4 img {
+        position: absolute;
+        left: 375px;
+        top: 47%;
+        border: dashed #37212b 2px;
+        padding: 15px;
+        width: 490px;
+        height: 327px;
+    }
+
+    .decor-bby-1 img {
+        position: absolute;
+        top: 16%;
+        right: 16%;
+        z-index: 5;
+        width: 180px;
+        height: auto;
+    }
+
+    .decor-bby-2 img {
+        position: absolute;
+        top: 21%;
+        left: 16%;
+        z-index: 25;
+        width: 180px;
+        height: auto;
+    }
+
+    .decor-bby-3 img {
+        position: absolute;
+        top: 55%;
+        right: 16%;
+        z-index: 5;
+        width: 160px;
+        height: auto;
+    }
+
+    .decor-bby-4 img {
+        position: absolute;
+        top: 60%;
+        left: 16%;
+        z-index: 25;
+        width: 180px;
+        height: auto;
+    }
+
+    /* .lead-bby {
+        position: relative;
+        background-image: url('../img/lead-bby.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 302px;
+    } */
+
+
 
 }
