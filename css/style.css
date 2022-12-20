@@ -222,7 +222,7 @@
         background-repeat: no-repeat;
         width: 100%;
         height: 2060px;
-        margin-top: -150px;
+        margin-top: -200px;
     }
 
     #mama-papa h1 img {
@@ -617,12 +617,13 @@
         font-weight: 600;
     }
 
-    #footer {
+    .review-wrapper {
         width: 1100px;
-        margin: 0 auto;
+        margin: 0 auto;  
     }
 
     .review-bufe {
+        
         position: absolute;
         top: 54%;
         text-align: center;
