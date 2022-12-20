@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Kaisei+Opti:wght@500;700&family=Kiwi+Maru:wght@400;500&family=Klee+One:wght@600&family=Kosugi+Maru&family=M+PLUS+2&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@500&family=Sawarabi+Gothic&family=Shippori+Antique+B1&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300;400;500;700;900&family=Zen+Old+Mincho:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kaisei+Decol&family=Kaisei+Opti:wght@500;700&family=Kiwi+Maru:wght@400;500&family=Klee+One:wght@600&family=Kosugi+Maru&family=M+PLUS+2&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@500&family=Potta+One&family=Sawarabi+Gothic&family=Shippori+Antique+B1&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300;400;500;700;900&family=Zen+Old+Mincho:wght@700;900&display=swap');
 
 @media only screen and (min-width: 1024px) {
 
@@ -92,16 +92,19 @@
     #family {
         background-image: url('../img/bg-hotel.png');
         position: relative;
+        background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
+        width: 100%;
         height: 2046px;
-        margin-top: -150px;
-        z-index: -1;
+        top: -150px;
+        margin: 0 auto;
     }
 
-    #family h1 img {
-        position: absolute;
+    #family h1 {
+        text-align: center;
+        position: relative;
         top: 15%;
-        margin-left: 600px;
     }
 
     #family h2 img {
@@ -120,7 +123,7 @@
     .swiper {
         width: 100%;
         height: 35%;
-        padding-top: 21%;
+        padding-top: 16%;
     }
 
     .swiper-slide {
@@ -219,7 +222,7 @@
         background-repeat: no-repeat;
         width: 100%;
         height: 2060px;
-        margin-top: -70px;
+        margin-top: -150px;
     }
 
     #mama-papa h1 img {
@@ -525,7 +528,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 2934px;
+        height: 3100px;
         position: relative;
     }
 
@@ -621,17 +624,21 @@
 
     .review-bufe {
         position: absolute;
-        top: 55%;
-        left: 20%;
+        top: 54%;
         text-align: center;
     }
 
+    .stars img {
+        width: 35%;
+    }
     .line-top {
-        top: -10px;
+        position: relative;
+        top: 30px;
     }
 
     .review-bufe h3 {
-        top: 50px;
+        font-family: 'Zen Kurenaido', sans-serif;
+        font-size: 24px;
     }
 
     .honbun-review {
@@ -641,7 +648,16 @@
         margin: 0 auto;
         width: 782px;
         height: 243px;
-        font-size: 18px;
+        font-family: 'Kiwi Maru', serif;
+        padding: 50px;
+    }
+
+    .honbun-review p {
+        padding: 25px 50px;
+        font-size: 22px;
+        text-align: left;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
     }
 
 }
