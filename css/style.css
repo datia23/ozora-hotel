@@ -86,7 +86,7 @@
         z-index: 10;
     }
 
-    #summary {
+    #family {
         background-image: url('../img/bg-hotel.png');
         position: relative;
         background-size: cover;
@@ -95,13 +95,13 @@
         z-index: -1;
     }
 
-    #summary h1 img {
+    #family h1 img {
         position: absolute;
         top: 15%;
         margin-left: 600px;
     }
 
-    #summary h2 img {
+    #family h2 img {
         position: absolute;
         top: 14%;
         right: 7%;
@@ -138,6 +138,10 @@
 
     .swiper-slide img {
         height: auto;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #f59bb3;
     }
 
     /*plan hotel*/
@@ -404,10 +408,24 @@
         margin-left: 0;
     }
 
-    .swiper-button-next,
-    .swiper-button-prev {
-        color: rgba(0, 0, 0, 0.42);
-        border-radius: 60px;
+    .swiper-btn-camp {
+        position: relative;
+        width: 1330px;
+        bottom: 140px;
+        margin: 0 auto;
+    }
+
+    .swiper-btn-camp .swiper-button-next {
+        color: #fbd1dc;
+    }
+
+    .swiper-btn-camp .swiper-button-prev {
+        color: #fbd1dc;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        opacity: 0.2;
     }
 
     .camp-caption {
@@ -434,9 +452,8 @@
     }
 
     .plan-camp-1 p {
-        position: absolute;
         font-size: 15px;
-        padding: 35px 50px;
+        padding: 40px 50px;
         line-height: 2;
         letter-spacing: 1px;
     }
@@ -447,8 +464,9 @@
     }
 
     .plan-camp-1 .button img {
-        margin-top: 100px;
+        position: absolute;
         margin-left: 390px;
+        margin-top: -100px;
     }
 
     .plan-camp-2 {
@@ -459,5 +477,122 @@
         height: 215px;
         margin-top: 930px;
         margin-left: 730px;
+    }
+
+    .plan-camp-2 p {
+        font-size: 15px;
+        padding: 40px 50px;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+
+    .plan-camp-2 p span {
+        color: white;
+        -webkit-text-stroke: #331675 1px;
+    }
+
+    .plan-camp-2 .button img {
+        position: absolute;
+        margin-top: -100px;
+        margin-left: 390px;
+    }
+
+    /* bufe */
+    #bufe {
+        background-image: url('../img/bg-bufe-footer.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 2934px;
+        position: relative;
+    }
+
+    .bufe-wrapper {
+        width: 1235px;
+        margin: 0 auto;
+    }
+
+    #bufe h1 {
+        position: absolute;
+        margin: 100px auto;
+    }
+
+    /* swiper bufe */
+    .swiper-bufe {
+        position: relative;
+        width: 760px;
+        height: 600px;
+        margin: 0 auto;
+        top: 330px;
+        overflow: hidden;
+    }
+
+    .bufeSwiper .swiper-wrapper {
+        position: relative;
+        bottom: 35%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box;
+    }
+
+    .swiper-bufe .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .bufeSwiper2 .swiper-slide img {
+        display: block;
+        width: 734px;
+    }
+
+    .bufeSwiper .swiper-slide img {
+        display: block;
+        width: 225px;
+    }
+
+    .bufeSwiper .swiper-slide-thumb-active img {
+        border: solid #6775b8 3px;
+        padding: 8px;
+    }
+
+    .swiper-btn-bufe {
+        position: relative;
+        width: 950px;
+        margin: 0 auto;
+        bottom: 185px;
+    }
+
+    .swiper-btn-bufe .swiper-button-next,
+    .swiper-button-prev {
+        color: #6775b8;
+    }
+
+    .honbun-bufe {
+        width: 1020px;
+        margin: 0 auto;
+        text-align: justify;
+        font-size: 22px;
+        line-height: 2.5;
+        letter-spacing: 1px;
+        border: dashed #6775b8 5px;
+        border-radius: 15px;
+        padding: 30px 50px;
+    }
+
+    #footer {
+        width: 1120px;
+        margin: 0 auto;
     }
 }
