@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Kaisei+Opti:wght@500;700&family=Kiwi+Maru:wght@400;500&family=Klee+One:wght@600&family=Kosugi+Maru&family=M+PLUS+2&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@500&family=Sawarabi+Gothic&family=Shippori+Antique+B1&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300;400;500;700;900&family=Zen+Old+Mincho:wght@700;900&display=swap');
+
 @media only screen and (min-width: 1024px) {
 
     .pc {
@@ -72,7 +74,8 @@
 
     #navbar a {
         text-decoration: none;
-        font-size: 28px;
+        font-family: 'Kiwi Maru', serif;
+        font-size: 30px;
         color: #ae3f57;
     }
 
@@ -105,6 +108,12 @@
         position: absolute;
         top: 14%;
         right: 7%;
+    }
+
+    #family p {
+        font-family: 'Kiwi Maru', serif;
+        font-size: 26px;
+        opacity: 90%;
     }
 
     /* swiper */
@@ -160,14 +169,17 @@
 
     .plan-htl-1 p {
         text-align: center;
-        font-size: 22px;
-        padding-top: 40px;
-        line-height: 2;
-        letter-spacing: 2px;
+        color: #ac476e;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        padding-top: 45px;
+        line-height: 1.5;
+        letter-spacing: 3px;
     }
 
     .plan-htl-1 .button img {
-        margin: 10px 400px;
+        margin: 15px 400px;
     }
 
     .plan-htl-2 {
@@ -181,14 +193,17 @@
 
     .plan-htl-2 p {
         text-align: center;
-        font-size: 22px;
-        padding-top: 40px;
-        line-height: 2;
-        letter-spacing: 2px;
+        color: #7e3447;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        padding-top: 45px;
+        line-height: 1.5;
+        letter-spacing: 3px;
     }
 
     .plan-htl-2 .button img {
-        margin: 10px 400px;
+        margin: 15px 400px;
     }
 
     .button img:hover {
@@ -312,10 +327,12 @@
 
     .lead-bby p {
         text-align: justify;
+        font-family: 'Kiwi Maru', serif;
         padding: 50px 110px;
         line-height: 2.5;
-        font-size: 24px;
-        letter-spacing: 2px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 500;
     }
 
     .plan-bby-wrapper {
@@ -334,9 +351,11 @@
 
     .plan-bby p {
         text-align: center;
-        font-size: 32px;
-        padding-top: 65px;
-        letter-spacing: 5px;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        color: #ac476e;
+        font-size: 34px;
+        padding-top: 60px;
+        letter-spacing: 7px;
     }
 
     .plan-bby .button img {
@@ -430,10 +449,11 @@
 
     .camp-caption {
         text-align: center;
-        font-size: 22px;
+        font-size: 24px;
+        font-family: 'Kosugi Maru', sans-serif;
         line-height: 2;
-        letter-spacing: 3px;
-        padding-top: 50px;
+        letter-spacing: 2px;
+        padding-top: 35px;
     }
 
     /* plan camp */
@@ -454,13 +474,14 @@
     .plan-camp-1 p {
         font-size: 15px;
         padding: 40px 50px;
+        font-family: 'Mochiy Pop P One', sans-serif;
         line-height: 2;
         letter-spacing: 1px;
     }
 
     .plan-camp-1 p span {
         color: white;
-        -webkit-text-stroke: #298b61 1px;
+        -webkit-text-stroke: #298b61 1.5px;
     }
 
     .plan-camp-1 .button img {
@@ -482,13 +503,14 @@
     .plan-camp-2 p {
         font-size: 15px;
         padding: 40px 50px;
+        font-family: 'Mochiy Pop P One', sans-serif;
         line-height: 2;
         letter-spacing: 1px;
     }
 
     .plan-camp-2 p span {
         color: white;
-        -webkit-text-stroke: #331675 1px;
+        -webkit-text-stroke: #331675 1.5px;
     }
 
     .plan-camp-2 .button img {
@@ -583,16 +605,43 @@
         width: 1020px;
         margin: 0 auto;
         text-align: justify;
-        font-size: 22px;
-        line-height: 2.5;
-        letter-spacing: 1px;
+        font-family: 'Kiwi Maru', serif;
+        font-size: 23px;
+        line-height: 2;
         border: dashed #6775b8 5px;
         border-radius: 15px;
-        padding: 30px 50px;
+        padding: 35px 50px;
+        font-weight: 600;
     }
 
     #footer {
-        width: 1120px;
+        width: 1100px;
         margin: 0 auto;
     }
+
+    .review-bufe {
+        position: absolute;
+        top: 55%;
+        left: 20%;
+        text-align: center;
+    }
+
+    .line-top {
+        top: -10px;
+    }
+
+    .review-bufe h3 {
+        top: 50px;
+    }
+
+    .honbun-review {
+        background-image: url('../img/honbun-review.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        width: 782px;
+        height: 243px;
+        font-size: 18px;
+    }
+
 }
