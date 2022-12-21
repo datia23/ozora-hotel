@@ -280,8 +280,8 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 2060px;
-        margin-top: -200px;
+        height: 1650px;
+        margin-top: -280px;
     }
 
     #mama-papa h1 img {
@@ -316,11 +316,12 @@ body {
 
     .collage-1 {
         order: 2;
+        margin-top: -15px;
     }
 
     .collage-2 {
         order: 1;
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     .collage-3 {
@@ -329,28 +330,28 @@ body {
 
     .collage-4 {
         order: 3;
-        margin-top: 40px;
+        margin-top: 45px;
     }
 
-
+    /* decor */
     .collage-1 img {
-        top: 0;
-        right: 0;
+        top: -55px;
+        right: -86px;
     }
 
     .collage-2 img {
-        top: 0;
-        left: 0;
+        top: -66px;
+        left: -84px;
     }
 
     .collage-3 img {
-        bottom: 0;
-        right: 0;
+        bottom: -15px;
+        right: -92px;
     }
 
     .collage-4 img {
-        bottom: 0;
-        left: 0;
+        bottom: -44px;
+        left: -52px;
     }
 
     /* .collage-1 img {
@@ -439,9 +440,10 @@ body {
         background-image: url('../img/lead-bby.png');
         background-repeat: no-repeat;
         background-position: center;
+        background-size: contain;
         max-width: 1355px;
         height: 295px;
-        margin-top: 150px;
+        margin-top: 52px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -449,15 +451,15 @@ body {
     .lead-bby p {
         text-align: justify;
         font-family: 'Kiwi Maru', serif;
-        padding: 50px 110px;
+        padding: 65px 60px;
         line-height: 2.5;
-        font-size: 25px;
-        letter-spacing: 1px;
+        font-size: 20px;
+        letter-spacing: 2px;
         font-weight: 500;
     }
 
     .plan-bby-wrapper {
-        width: 1132px;
+        max-width: 1132px;
         margin: 0 auto;
     }
 
@@ -465,22 +467,24 @@ body {
         background-image: url('../img/plan-bby.png');
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
+        background-size: contain;
+        width: 75%;
         height: 236px;
-        margin: 80px auto;
+        margin: -30px auto;
     }
 
     .plan-bby p {
         text-align: center;
         font-family: 'Mochiy Pop P One', sans-serif;
         color: #ac476e;
-        font-size: 34px;
-        padding-top: 60px;
-        letter-spacing: 7px;
+        font-size: 25px;
+        padding-top: 70px;
+        letter-spacing: 6px;
     }
 
-    .plan-bby .button img {
-        margin: 20px 405px;
+    .plan-bby .button {
+        text-align: center;
+        margin-top: 15px;
     }
 
     /* Hotel camp */
@@ -879,7 +883,7 @@ body {
 
     .plan-htl-1 {
         width: 100%;
-        
+
     }
 
     .plan-htl-2 {
@@ -895,6 +899,71 @@ body {
         padding-top: 45px;
     }
 
+    #mama-papa {
+        height: 2060px;
+        margin-top: -200px;
+    }
+
+    .collage-1 {
+        order: 2;
+        margin-top: -30px;
+    }
+
+    .collage-2 {
+        order: 1;
+        margin-top: 60px;
+    }
+
+    .collage-3 {
+        order: 4;
+        margin-top: -5px;
+    }
+
+    .collage-4 {
+        order: 3;
+        margin-top: 75px;
+    }
+
+    .collage-1 img {
+        top: -55px;
+        right: -87px;
+    }
+
+    .collage-2 img {
+        top: -68px;
+        left: -85px;
+    }
+
+    .collage-3 img {
+        bottom: 21px;
+        right: -97px;
+    }
+
+    .collage-4 img {
+        bottom: -39px;
+        left: -57px;
+    }
+
+    .lead-bby {
+        margin-top: 150px;
+    }
+
+    .lead-bby p {
+        padding: 55px 90px;
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+
+    .plan-bby {
+        width: 100%;
+        margin: 80px auto;
+    }
+
+    .plan-bby p {
+        color: #ac476e;
+        font-size: 32px;
+        padding-top: 60px;
+    }
 
 
 }
