@@ -1,34 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kaisei+Decol&family=Kaisei+Opti:wght@500;700&family=Kiwi+Maru:wght@400;500&family=Klee+One:wght@600&family=Kosugi+Maru&family=M+PLUS+2&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@500&family=Potta+One&family=Sawarabi+Gothic&family=Shippori+Antique+B1&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300;400;500;700;900&family=Zen+Old+Mincho:wght@700;900&display=swap');
 
-@media only screen and (min-width: 1024px) {
+* {
+    margin: 0;
+    padding: 0;
+}
 
-    .pc {
-        display: block;
-    }
+html,
+body {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    width: 100%;
+}
 
-    .sp {
-        display: none;
-    }
 
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    html,
-    body {
-        scroll-behavior: smooth;
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%;
-    }
-
+@media only screen and (min-width: 375px) {
     .logo {
         background-color: white;
         padding-left: 100px;
         padding-top: 25px;
         padding-bottom: 25px;
     }
+
 
     #top {
         position: relative;
@@ -40,10 +32,54 @@
         margin: 0 auto;
     }
 
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .pc {
+        display: block;
+    }
+
+    .sp {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 75px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    /* .dot {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        background: url('../img/sakura-fall-1.png');
+        background-size: 100% 100%;
+    }
+
+    .dot2 {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        background: url('../img/sakura-fall-2.png');
+        background-size: 100% 100%;
+    }
+
+    .dot3 {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        background: url('../img/sakura-fall-3.png');
+        background-size: 100% 100%;
+    } */
+
+
     #top h1 img {
         position: absolute;
         margin: 0 auto;
-        width: auto;
+        width: 60%;
+        max-width: 800px;
         bottom: 5%;
         right: 1%;
     }
@@ -52,18 +88,19 @@
         background-color: #fee6f1;
         border-radius: 15px;
         padding: 25px 10px;
-        margin: 60px 250px 20px;
+        margin: 60px auto;
         box-shadow: 5px 5px 5px grey;
         gap: 5px;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        width: 70%;
     }
 
     #navbar ul li {
         list-style: none;
         border-right: dashed 3px #ae3f57;
-        padding-right: 50px;
+        padding: 0 15px;
     }
 
     #navbar ul li.no-border {
@@ -75,7 +112,7 @@
     #navbar a {
         text-decoration: none;
         font-family: 'Kiwi Maru', serif;
-        font-size: 30px;
+        font-size: 16px;
         color: #ae3f57;
     }
 
@@ -96,7 +133,7 @@
         background-size: cover;
         background-position: center;
         width: 100%;
-        height: 2046px;
+        height: 1725px;
         top: -150px;
         margin: 0 auto;
     }
@@ -107,30 +144,43 @@
         top: 15%;
     }
 
-    #family h2 img {
+    #family h1 img {
+        width: 60%;
+        max-width: 726px;
+    }
+
+    #family h2 {
         position: absolute;
-        top: 14%;
-        right: 7%;
+        top: 20%;
+        right: -5%;
+
+    }
+
+    #family h2 img {
+        width: 60%;
+        max-width: 262px;
+
     }
 
     #family p {
         font-family: 'Kiwi Maru', serif;
-        font-size: 26px;
+        font-size: 18px;
         opacity: 90%;
+
+
     }
 
     /* swiper */
     .swiper {
         width: 100%;
         height: 35%;
-        padding-top: 16%;
+        padding-top: 25%;
     }
 
     .swiper-slide {
         text-align: left;
-        font-size: 22px;
         line-height: 2.5;
-        gap: 50px;
+        gap: 25px;
         align-items: center;
 
         /* Center slide text vertically */
@@ -150,6 +200,7 @@
 
     .swiper-slide img {
         height: auto;
+        width: 45%;
     }
 
     .swiper-pagination-bullet-active {
@@ -158,16 +209,20 @@
 
     /*plan hotel*/
     .htl-btn-wrapper {
-        width: 1132px;
-        margin: 220px auto;
+        width: 100%;
+        max-width: 1132px;
+        margin: 150px auto;
     }
 
     .plan-htl-1 {
         background-image: url('../img/plan1-htl.png');
         background-repeat: no-repeat;
+        background-size: contain;
         background-position: center;
-        width: 100%;
+        width: 80%;
         height: 234px;
+        margin: 0px auto;
+
     }
 
     .plan-htl-1 p {
@@ -176,22 +231,24 @@
         font-size: 24px;
         font-weight: 600;
         font-family: 'Mochiy Pop P One', sans-serif;
-        padding-top: 45px;
+        padding-top: 60px;
         line-height: 1.5;
         letter-spacing: 3px;
     }
 
-    .plan-htl-1 .button img {
-        margin: 15px 400px;
+    .plan-htl-1 .button {
+        text-align: center;
+        margin-top: 10px;
     }
 
     .plan-htl-2 {
         background-image: url('../img/plan2-htl.png');
         background-repeat: no-repeat;
         background-position: center;
-        width: 100%;
+        width: 80%;
         height: 234px;
-        margin-top: 80px;
+        margin: 0px auto;
+        background-size: contain;
     }
 
     .plan-htl-2 p {
@@ -200,13 +257,14 @@
         font-size: 24px;
         font-weight: 600;
         font-family: 'Mochiy Pop P One', sans-serif;
-        padding-top: 45px;
+        padding-top: 60px;
         line-height: 1.5;
         letter-spacing: 3px;
     }
 
-    .plan-htl-2 .button img {
-        margin: 15px 400px;
+    .plan-htl-2 .button {
+        text-align: center;
+        margin-top: 10px;
     }
 
     .button img:hover {
@@ -227,17 +285,75 @@
     }
 
     #mama-papa h1 img {
-        margin-left: 370px;
+        margin-left: 14%;
         width: 575px;
         margin-top: -10px;
     }
 
     .collage-bby {
-        width: 1150px;
+        width: 90%;
+        max-width: 1150px;
         margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
+    .collage-bby div {
+        width: 40%;
+        position: relative;
+    }
+
+    .collage-bby div img:first-child {
+        width: 100%;
+        border: dashed #37212b 2px;
+        padding: 15px;
+    }
+
+    .collage-bby div img:nth-child(2) {
+        position: absolute;
+    }
+
+    .collage-1 {
+        order: 2;
+    }
+
+    .collage-2 {
+        order: 1;
+        margin-top: 40px;
+    }
+
+    .collage-3 {
+        order: 4;
+    }
+
+    .collage-4 {
+        order: 3;
+        margin-top: 40px;
+    }
+
+
     .collage-1 img {
+        top: 0;
+        right: 0;
+    }
+
+    .collage-2 img {
+        top: 0;
+        left: 0;
+    }
+
+    .collage-3 img {
+        bottom: 0;
+        right: 0;
+    }
+
+    .collage-4 img {
+        bottom: 0;
+        left: 0;
+    }
+
+    /* .collage-1 img {
         position: absolute;
         right: 425px;
         top: 17%;
@@ -311,10 +427,11 @@
         z-index: 25;
         width: 180px;
         height: auto;
-    }
+    } */
 
     .lead-bby-wrapper {
-        width: 1355px;
+        width: 90%;
+        max-width: 1355px;
         margin: 0 auto;
     }
 
@@ -322,9 +439,9 @@
         background-image: url('../img/lead-bby.png');
         background-repeat: no-repeat;
         background-position: center;
-        width: 1355px;
+        max-width: 1355px;
         height: 295px;
-        margin-top: 950px;
+        margin-top: 150px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -621,7 +738,7 @@
 
     .review-wrapper {
         width: 1130px;
-        margin: 0 auto;  
+        margin: 0 auto;
         text-align: center;
     }
 
@@ -633,6 +750,7 @@
     .stars img {
         width: 35%;
     }
+
     .line-top {
         position: relative;
         top: 30px;
@@ -707,4 +825,76 @@
     .btn-ftr-4 img {
         width: 60%;
     }
+}
+
+
+
+@media only screen and (min-width: 1440px) {
+    .swiper-slide img {
+        width: auto;
+    }
+
+    #navbar ul li {
+        padding: 0 40px;
+    }
+
+    #family {
+        height: 2046px;
+    }
+
+    #family h1 {
+        top: 15%;
+    }
+
+    #family h1 img {
+        width: 100%;
+    }
+
+    #family h2 {
+        top: 18%;
+        right: 5%;
+    }
+
+    #family h2 img {
+        width: 100%;
+        top: 12%;
+
+    }
+
+    .swiper {
+        padding-top: 21%;
+    }
+
+    #family p {
+        font-size: 26px;
+    }
+
+    .swiper-slide {
+        gap: 50px;
+    }
+
+    .htl-btn-wrapper {
+        margin: 220px auto;
+    }
+
+    .plan-htl-1 {
+        width: 100%;
+        
+    }
+
+    .plan-htl-2 {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .plan-htl-1 p {
+        padding-top: 45px;
+    }
+
+    .plan-htl-2 p {
+        padding-top: 45px;
+    }
+
+
+
 }
