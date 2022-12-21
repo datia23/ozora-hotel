@@ -494,12 +494,13 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 1235px;
+        height: 1425px;
         margin: 0 auto;
     }
 
     .camp-htl-wrapper {
-        width: 1380px;
+        max-width: 1380px;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -507,25 +508,25 @@ body {
         position: absolute;
         background-color: white;
         border-radius: 40px;
-        box-shadow: 5px 5px 5px rgb(159, 159, 159);
-        width: 1380px;
+        box-shadow: 5px 5px 5px rgb(159 159 159);
+        max-width: 1260px;
+        width: 80%;
         height: 745px;
         margin-top: 100px;
     }
 
-    .camp-htl-box h1 img {
-        position: absolute;
-        top: 25px;
-        left: 28%;
+    .camp-htl-box h1 {
+        text-align: center;
+        margin-top: 20px;
     }
 
     /* Swiper camp-hotel */
     .swiper-camp {
-        width: 1235px;
-        justify-content: center;
-        margin-top: 235px;
-        margin-left: 70px;
-        margin-right: 70px;
+        max-width: 1165px;
+        width: 90%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
         overflow: hidden;
     }
 
@@ -546,7 +547,7 @@ body {
     }
 
     .swiper-camp .swiper-slide img {
-        width: 50%;
+        width: 80%;
         border: solid #fbd1dc 5px;
         border-radius: 5px;
         margin-left: 0;
@@ -554,8 +555,9 @@ body {
 
     .swiper-btn-camp {
         position: relative;
-        width: 1330px;
-        bottom: 140px;
+        max-width: 1235px;
+        width: 100%;
+        bottom: 155px;
         margin: 0 auto;
     }
 
@@ -574,31 +576,32 @@ body {
 
     .camp-caption {
         text-align: center;
-        font-size: 24px;
+        font-size: 19px;
         font-family: 'Kosugi Maru', sans-serif;
         line-height: 2;
         letter-spacing: 2px;
-        padding-top: 35px;
+        margin: 40px 31px;
     }
 
     /* plan camp */
     .plan-camp-wrapper {
-        width: 1380px;
-        margin-top: 0 auto;
+        max-width: 1290px;
+        width: 100%;
+        position: absolute;
+        margin-top: 900px;
     }
 
     .plan-camp-1 {
         background-image: url('../img/plan-camp.png');
         background-repeat: no-repeat;
-        position: absolute;
-        width: 660px;
+        background-size: contain;
+        width: 100%;
         height: 215px;
-        margin-top: 930px;
     }
 
     .plan-camp-1 p {
-        font-size: 15px;
-        padding: 40px 50px;
+        font-size: 16px;
+        padding: 31px 47px;
         font-family: 'Mochiy Pop P One', sans-serif;
         line-height: 2;
         letter-spacing: 1px;
@@ -609,25 +612,21 @@ body {
         -webkit-text-stroke: #298b61 1.5px;
     }
 
-    .plan-camp-1 .button img {
-        position: absolute;
-        margin-left: 390px;
-        margin-top: -100px;
+    .plan-camp-1 .button {
+        margin-left: 375px;
+        margin-top: -96px;
     }
 
     .plan-camp-2 {
         background-image: url('../img/plan-camp.png');
         background-repeat: no-repeat;
-        position: absolute;
-        width: 660px;
-        height: 215px;
-        margin-top: 930px;
-        margin-left: 730px;
+        background-size: contain;
+        width: 100%;
     }
 
     .plan-camp-2 p {
-        font-size: 15px;
-        padding: 40px 50px;
+        font-size: 16px;
+        padding: 31px 47px;
         font-family: 'Mochiy Pop P One', sans-serif;
         line-height: 2;
         letter-spacing: 1px;
@@ -638,10 +637,10 @@ body {
         -webkit-text-stroke: #331675 1.5px;
     }
 
-    .plan-camp-2 .button img {
-        position: absolute;
-        margin-top: -100px;
-        margin-left: 390px;
+    .plan-camp-2 .button {
+        margin-left: 377px;
+        margin-top: -97px;
+
     }
 
     /* bufe */
@@ -965,5 +964,41 @@ body {
         padding-top: 60px;
     }
 
+    /* hotel camp */
+    .camp-htl-box {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .swiper-camp {
+        width: 100%;
+    }
+
+    .swiper-camp .swiper-slide img {
+        width: 50%;
+    }
+
+    .swiper-btn-camp {
+        bottom: 140px;
+    }
+
+    .camp-htl-wrapper {
+        width: 100%;
+    }
+
+    .camp-caption {
+        margin: 30px 60px;
+    }
+
+    #camp-hotel {
+        height: 1235px;
+    }
+
+    .plan-camp-wrapper {
+        display: flex;
+        position: absolute;
+        gap: 50px;
+        margin-left: 50px;
+    }
 
 }
