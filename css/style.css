@@ -14,66 +14,30 @@ body {
 
 
 @media only screen and (min-width: 375px) {
-    .logo {
-        background-color: white;
-        padding-left: 100px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-
-
-    #top {
-        position: relative;
-        background-image: url('../img/top.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 1283px;
-        margin: 0 auto;
-    }
-
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .pc {
+    .sp {
         display: block;
     }
 
-    .sp {
+    .pc {
         display: none;
     }
 
     .logo {
-        padding-left: 75px;
+        background-color: white;
+        padding-left: 30px;
         padding-top: 35px;
         padding-bottom: 35px;
     }
 
-    /* .dot {
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        background: url('../img/sakura-fall-1.png');
-        background-size: 100% 100%;
+    #top {
+        position: relative;
+        background-image: url('../img/bg-top-sp.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 468px;
+        margin: 0 auto;
     }
-
-    .dot2 {
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        background: url('../img/sakura-fall-2.png');
-        background-size: 100% 100%;
-    }
-
-    .dot3 {
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        background: url('../img/sakura-fall-3.png');
-        background-size: 100% 100%;
-    } */
-
 
     #top h1 img {
         position: absolute;
@@ -84,69 +48,34 @@ body {
         right: 1%;
     }
 
-    #navbar ul {
-        background-color: #fee6f1;
-        border-radius: 15px;
-        padding: 25px 10px;
-        margin: 60px auto;
-        box-shadow: 5px 5px 5px grey;
-        gap: 5px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 70%;
-    }
-
-    #navbar ul li {
-        list-style: none;
-        border-right: dashed 3px #ae3f57;
-        padding: 0 15px;
-    }
-
-    #navbar ul li.no-border {
-        list-style: none;
-        border-right: 0px;
-        padding-right: 0px;
-    }
-
-    #navbar a {
-        text-decoration: none;
-        font-family: 'Kiwi Maru', serif;
-        font-size: 16px;
-        color: #ae3f57;
-    }
-
-    #navbar a:hover {
-        color: white;
-    }
-
-    .nav-scroll {
-        position: sticky;
-        top: 50px;
-        z-index: 10;
-    }
-
+    /* family */
     #family {
-        background-image: url('../img/bg-hotel.png');
+        background-image: url('../img/bg-fam-sp.png');
         position: relative;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         width: 100%;
-        height: 1725px;
-        top: -150px;
+        height: 544px;
+        top: -35px;
         margin: 0 auto;
     }
 
     #family h1 {
         text-align: center;
         position: relative;
-        top: 15%;
+        top: 10%;
     }
 
     #family h1 img {
         width: 60%;
         max-width: 726px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 35%;
+        padding-top: 25%;
     }
 
     #family h2 {
@@ -159,15 +88,12 @@ body {
     #family h2 img {
         width: 60%;
         max-width: 262px;
-
     }
 
     #family p {
         font-family: 'Kiwi Maru', serif;
         font-size: 18px;
         opacity: 90%;
-
-
     }
 
     /* swiper */
@@ -286,8 +212,10 @@ body {
 
     #mama-papa h1 img {
         margin-left: 14%;
-        width: 575px;
-        margin-top: -10px;
+        max-width: 575px;
+        width: 50%;
+        margin-top: 30px;
+
     }
 
     .collage-bby {
@@ -494,7 +422,7 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 1425px;
+        height: 1300px;
         margin: 0 auto;
     }
 
@@ -512,7 +440,7 @@ body {
         max-width: 1260px;
         width: 80%;
         height: 745px;
-        margin-top: 100px;
+        margin-top: 60px;
     }
 
     .camp-htl-box h1 {
@@ -588,7 +516,8 @@ body {
         max-width: 1290px;
         width: 100%;
         position: absolute;
-        margin-top: 900px;
+        top: 65%;
+        left: 18%;
     }
 
     .plan-camp-1 {
@@ -622,6 +551,7 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         width: 100%;
+        height: 215px;
     }
 
     .plan-camp-2 p {
@@ -649,27 +579,32 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 3100px;
+        height: 2670px;
         position: relative;
     }
 
     .bufe-wrapper {
-        width: 1235px;
+        max-width: 1235px;
         margin: 0 auto;
     }
 
     #bufe h1 {
+        text-align: center;
         position: absolute;
-        margin: 100px auto;
+        top: 70px;
+    }
+
+    #bufe h1 img {
+        width: 80%;
     }
 
     /* swiper bufe */
     .swiper-bufe {
         position: relative;
         width: 760px;
-        height: 600px;
+        height: 575px;
         margin: 0 auto;
-        top: 330px;
+        top: 250px;
         overflow: hidden;
     }
 
@@ -715,9 +650,10 @@ body {
 
     .swiper-btn-bufe {
         position: relative;
-        width: 950px;
+        max-width: 950px;
+        width: 85%;
         margin: 0 auto;
-        bottom: 185px;
+        bottom: 245px;
     }
 
     .swiper-btn-bufe .swiper-button-next,
@@ -726,12 +662,13 @@ body {
     }
 
     .honbun-bufe {
-        width: 1020px;
+        max-width: 1020px;
+        width: 65%;
         position: relative;
-        margin: 0 auto;
+        margin: -85px auto;
         text-align: justify;
         font-family: 'Kiwi Maru', serif;
-        font-size: 23px;
+        font-size: 21px;
         line-height: 2;
         border: dashed #6775b8 5px;
         border-radius: 15px;
@@ -740,28 +677,27 @@ body {
     }
 
     .review-wrapper {
-        width: 1130px;
-        margin: 0 auto;
+        max-width: 1130px;
+        width: 80%;
+        margin: 150px auto;
         text-align: center;
     }
 
-    .review-bufe {
+    /* .review-bufe {
         position: absolute;
         top: 52%;
-    }
-
-    .stars img {
-        width: 35%;
-    }
+    } */
 
     .line-top {
+        max-width: 1130px;
+        width: 90%;
+        top: 20px;
         position: relative;
-        top: 30px;
     }
 
     .review-bufe h3 {
         font-family: 'Zen Kurenaido', sans-serif;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 1;
     }
 
@@ -769,59 +705,882 @@ body {
         background-image: url('../img/honbun-review.png');
         background-position: center;
         background-repeat: no-repeat;
-        margin: 0 auto;
-        width: 782px;
-        height: 243px;
+        background-size: contain;
+        margin: 25px auto;
+        width: 70%;
+        max-width: 782px;
         font-family: 'Kiwi Maru', serif;
-        padding: 50px;
     }
 
     .honbun-review p {
-        padding: 25px 50px;
-        font-size: 22px;
+        padding: 30px 50px;
+        font-size: 16px;
         text-align: left;
         line-height: 1.5;
         letter-spacing: 1.5px;
     }
 
+    .line-bttm {
+        max-width: 1130px;
+        width: 90%;
+        position: relative;
+    }
+
     /* footer */
     #footer {
-        width: 1250px;
-        margin: 0 auto;
+        max-width: 1250px;
+        margin: -80px auto;
     }
 
     .btn-ftr-1 {
-        margin-top: 800px;
         text-align: center;
     }
 
     .btn-ftr-1 img {
-        width: 60%;
+        max-width: 600px;
+        width: 80%;
     }
 
     .btn-ftr-1 p {
         text-align: center;
         padding-top: 25px;
-        font-size: 22px;
+        font-size: 20px;
         font-family: 'Sawarabi Gothic', sans-serif;
         letter-spacing: 1px;
         line-height: 2;
     }
 
     .btn-ftr-2-3 {
-        display: flex;
-        justify-content: space-between;
+        max-width: 450px;
         margin: 0 auto;
         text-align: center;
-        margin-top: 65px;
+        margin-top: 35px;
     }
 
     .btn-ftr-2-3 img {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .btn-ftr-4 {
-        margin-top: 80px;
+        margin-top: 35px;
+        text-align: center;
+    }
+
+    .btn-ftr-4 img {
+        width: 60%;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .pc {
+        display: block;
+    }
+
+    .sp {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 75px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    #top {
+        background-image: url('../img/top.jpg');
+        height: 1283px;
+    }
+
+    #family {
+        background-image: url('../img/bg-hotel.png');
+        width: 100%;
+        height: 1725px;
+        top: -150px;
+    }
+
+    /* .dot {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        background: url('../img/sakura-fall-1.png');
+        background-size: 100% 100%;
+    }
+
+    .dot2 {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        background: url('../img/sakura-fall-2.png');
+        background-size: 100% 100%;
+    }
+
+    .dot3 {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        background: url('../img/sakura-fall-3.png');
+        background-size: 100% 100%;
+    } */
+
+
+    #top h1 img {
+        width: 60%;
+    }
+
+    #navbar ul {
+        background-color: #fee6f1;
+        border-radius: 15px;
+        padding: 25px 10px;
+        margin: 60px auto;
+        box-shadow: 5px 5px 5px grey;
+        gap: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+    }
+
+    #navbar ul li {
+        list-style: none;
+        border-right: dashed 3px #ae3f57;
+        padding: 0 15px;
+    }
+
+    #navbar ul li.no-border {
+        list-style: none;
+        border-right: 0px;
+        padding-right: 0px;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        font-family: 'Kiwi Maru', serif;
+        font-size: 16px;
+        color: #ae3f57;
+    }
+
+    #navbar a:hover {
+        color: white;
+    }
+
+    .nav-scroll {
+        position: sticky;
+        top: 50px;
+        z-index: 10;
+    }
+
+    #family {
+        background-image: url('../img/bg-hotel.png');
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 1725px;
+        top: -150px;
+        margin: 0 auto;
+    }
+
+    #family h1 {
+        top: 15%;
+    }
+
+    #family h1 img {
+        width: 60%;
+        max-width: 726px;
+    }
+
+    #family h2 {
+        position: absolute;
+        top: 20%;
+        right: -5%;
+
+    }
+
+    #family h2 img {
+        width: 60%;
+        max-width: 262px;
+    }
+
+    #family p {
+        font-family: 'Kiwi Maru', serif;
+        font-size: 18px;
+        opacity: 90%;
+    }
+
+    /* swiper */
+    .swiper {
+        width: 100%;
+        height: 35%;
+        padding-top: 25%;
+    }
+
+    .swiper-slide {
+        text-align: left;
+        line-height: 2.5;
+        gap: 25px;
+        align-items: center;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        height: auto;
+        width: 45%;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #f59bb3;
+    }
+
+    /*plan hotel*/
+    .htl-btn-wrapper {
+        width: 100%;
+        max-width: 1132px;
+        margin: 150px auto;
+    }
+
+    .plan-htl-1 {
+        background-image: url('../img/plan1-htl.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 80%;
+        height: 234px;
+        margin: 0px auto;
+
+    }
+
+    .plan-htl-1 p {
+        text-align: center;
+        color: #ac476e;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        padding-top: 60px;
+        line-height: 1.5;
+        letter-spacing: 3px;
+    }
+
+    .plan-htl-1 .button {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .plan-htl-2 {
+        background-image: url('../img/plan2-htl.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 80%;
+        height: 234px;
+        margin: 0px auto;
+        background-size: contain;
+    }
+
+    .plan-htl-2 p {
+        text-align: center;
+        color: #7e3447;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        padding-top: 60px;
+        line-height: 1.5;
+        letter-spacing: 3px;
+    }
+
+    .plan-htl-2 .button {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .button img:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    /*mama papa*/
+
+    #mama-papa {
+        position: relative;
+        background-image: url('../img/bg-mama.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 1650px;
+        margin-top: -280px;
+    }
+
+    #mama-papa h1 img {
+        margin-left: 14%;
+        max-width: 575px;
+        width: 50%;
+        margin-top: 30px;
+
+    }
+
+    .collage-bby {
+        width: 90%;
+        max-width: 1150px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .collage-bby div {
+        width: 40%;
+        position: relative;
+    }
+
+    .collage-bby div img:first-child {
+        width: 100%;
+        border: dashed #37212b 2px;
+        padding: 15px;
+    }
+
+    .collage-bby div img:nth-child(2) {
+        position: absolute;
+    }
+
+    .collage-1 {
+        order: 2;
+        margin-top: -15px;
+    }
+
+    .collage-2 {
+        order: 1;
+        margin-top: 30px;
+    }
+
+    .collage-3 {
+        order: 4;
+    }
+
+    .collage-4 {
+        order: 3;
+        margin-top: 45px;
+    }
+
+    /* decor */
+    .collage-1 img {
+        top: -55px;
+        right: -86px;
+    }
+
+    .collage-2 img {
+        top: -66px;
+        left: -84px;
+    }
+
+    .collage-3 img {
+        bottom: -15px;
+        right: -92px;
+    }
+
+    .collage-4 img {
+        bottom: -44px;
+        left: -52px;
+    }
+
+    /* .collage-1 img {
+        position: absolute;
+        right: 425px;
+        top: 17%;
+        border: dashed #37212b 2px;
+        padding: 15px;
+        width: 450px;
+        height: 300px;
+    }
+
+    .collage-2 img {
+        position: absolute;
+        left: 425px;
+        top: 22%;
+        border: dashed #37212b 2px;
+        padding: 15px;
+        width: 450px;
+        height: 300px;
+    }
+
+    .collage-3 img {
+        position: absolute;
+        right: 425px;
+        top: 37%;
+        border: dashed #37212b 2px;
+        padding: 15px;
+        width: 450px;
+        height: 300px;
+    }
+
+    .collage-4 img {
+        position: absolute;
+        left: 425px;
+        top: 42%;
+        border: dashed #37212b 2px;
+        padding: 15px;
+        width: 450px;
+        height: 300px;
+    }
+
+    .decor-bby-1 img {
+        position: absolute;
+        top: 13%;
+        right: 18%;
+        z-index: 5;
+        width: 180px;
+        height: auto;
+    }
+
+    .decor-bby-2 img {
+        position: absolute;
+        top: 19%;
+        left: 18%;
+        z-index: 25;
+        width: 180px;
+        height: auto;
+    }
+
+    .decor-bby-3 img {
+        position: absolute;
+        top: 50%;
+        right: 18%;
+        z-index: 5;
+        width: 150px;
+        height: auto;
+    }
+
+    .decor-bby-4 img {
+        position: absolute;
+        top: 55%;
+        left: 18%;
+        z-index: 25;
+        width: 180px;
+        height: auto;
+    } */
+
+    .lead-bby-wrapper {
+        width: 90%;
+        max-width: 1355px;
+        margin: 0 auto;
+    }
+
+    .lead-bby {
+        background-image: url('../img/lead-bby.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        max-width: 1355px;
+        height: 295px;
+        margin-top: 52px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lead-bby p {
+        text-align: justify;
+        font-family: 'Kiwi Maru', serif;
+        padding: 65px 60px;
+        line-height: 2.5;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+
+    .plan-bby-wrapper {
+        max-width: 1132px;
+        margin: 0 auto;
+    }
+
+    .plan-bby {
+        background-image: url('../img/plan-bby.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 75%;
+        height: 236px;
+        margin: -30px auto;
+    }
+
+    .plan-bby p {
+        text-align: center;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        color: #ac476e;
+        font-size: 25px;
+        padding-top: 70px;
+        letter-spacing: 6px;
+    }
+
+    .plan-bby .button {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /* Hotel camp */
+    #camp-hotel {
+        background-image: url('../img/htl-camp.png');
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 1300px;
+        margin: 0 auto;
+    }
+
+    .camp-htl-wrapper {
+        max-width: 1380px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .camp-htl-box {
+        position: absolute;
+        background-color: white;
+        border-radius: 40px;
+        box-shadow: 5px 5px 5px rgb(159 159 159);
+        max-width: 1260px;
+        width: 80%;
+        height: 745px;
+        margin-top: 60px;
+    }
+
+    .camp-htl-box h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Swiper camp-hotel */
+    .swiper-camp {
+        max-width: 1165px;
+        width: 90%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
+    .swiper-camp .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-camp .swiper-slide img {
+        width: 80%;
+        border: solid #fbd1dc 5px;
+        border-radius: 5px;
+        margin-left: 0;
+    }
+
+    .swiper-btn-camp {
+        position: relative;
+        max-width: 1235px;
+        width: 100%;
+        bottom: 155px;
+        margin: 0 auto;
+    }
+
+    .swiper-btn-camp .swiper-button-next {
+        color: #fbd1dc;
+    }
+
+    .swiper-btn-camp .swiper-button-prev {
+        color: #fbd1dc;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        opacity: 0.2;
+    }
+
+    .camp-caption {
+        text-align: center;
+        font-size: 19px;
+        font-family: 'Kosugi Maru', sans-serif;
+        line-height: 2;
+        letter-spacing: 2px;
+        margin: 40px 31px;
+    }
+
+    /* plan camp */
+    .plan-camp-wrapper {
+        max-width: 1290px;
+        width: 100%;
+        position: absolute;
+        top: 65%;
+        left: 18%;
+    }
+
+    .plan-camp-1 {
+        background-image: url('../img/plan-camp.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 215px;
+    }
+
+    .plan-camp-1 p {
+        font-size: 16px;
+        padding: 31px 47px;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+
+    .plan-camp-1 p span {
+        color: white;
+        -webkit-text-stroke: #298b61 1.5px;
+    }
+
+    .plan-camp-1 .button {
+        margin-left: 375px;
+        margin-top: -96px;
+    }
+
+    .plan-camp-2 {
+        background-image: url('../img/plan-camp.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 215px;
+    }
+
+    .plan-camp-2 p {
+        font-size: 16px;
+        padding: 31px 47px;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+
+    .plan-camp-2 p span {
+        color: white;
+        -webkit-text-stroke: #331675 1.5px;
+    }
+
+    .plan-camp-2 .button {
+        margin-left: 377px;
+        margin-top: -97px;
+
+    }
+
+    /* bufe */
+    #bufe {
+        background-image: url('../img/bg-bufe-footer.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 2670px;
+        position: relative;
+    }
+
+    .bufe-wrapper {
+        max-width: 1235px;
+        margin: 0 auto;
+    }
+
+    #bufe h1 {
+        text-align: center;
+        position: absolute;
+        top: 70px;
+    }
+
+    #bufe h1 img {
+        width: 80%;
+    }
+
+    /* swiper bufe */
+    .swiper-bufe {
+        position: relative;
+        width: 760px;
+        height: 575px;
+        margin: 0 auto;
+        top: 250px;
+        overflow: hidden;
+    }
+
+    .bufeSwiper .swiper-wrapper {
+        position: relative;
+        bottom: 35%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box;
+    }
+
+    .swiper-bufe .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .bufeSwiper2 .swiper-slide img {
+        display: block;
+        width: 734px;
+    }
+
+    .bufeSwiper .swiper-slide img {
+        display: block;
+        width: 225px;
+    }
+
+    .bufeSwiper .swiper-slide-thumb-active img {
+        border: solid #6775b8 3px;
+        padding: 8px;
+    }
+
+    .swiper-btn-bufe {
+        position: relative;
+        max-width: 950px;
+        width: 85%;
+        margin: 0 auto;
+        bottom: 245px;
+    }
+
+    .swiper-btn-bufe .swiper-button-next,
+    .swiper-button-prev {
+        color: #6775b8;
+    }
+
+    .honbun-bufe {
+        max-width: 1020px;
+        width: 65%;
+        position: relative;
+        margin: -85px auto;
+        text-align: justify;
+        font-family: 'Kiwi Maru', serif;
+        font-size: 21px;
+        line-height: 2;
+        border: dashed #6775b8 5px;
+        border-radius: 15px;
+        padding: 35px 50px;
+        font-weight: 600;
+    }
+
+    .review-wrapper {
+        max-width: 1130px;
+        width: 80%;
+        margin: 150px auto;
+        text-align: center;
+    }
+
+    /* .review-bufe {
+        position: absolute;
+        top: 52%;
+    } */
+
+    .line-top {
+        max-width: 1130px;
+        width: 90%;
+        top: 20px;
+        position: relative;
+    }
+
+    .review-bufe h3 {
+        font-family: 'Zen Kurenaido', sans-serif;
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    .honbun-review {
+        background-image: url('../img/honbun-review.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 25px auto;
+        width: 70%;
+        max-width: 782px;
+        font-family: 'Kiwi Maru', serif;
+    }
+
+    .honbun-review p {
+        padding: 30px 50px;
+        font-size: 16px;
+        text-align: left;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
+    }
+
+    .line-bttm {
+        max-width: 1130px;
+        width: 90%;
+        position: relative;
+    }
+
+    /* footer */
+    #footer {
+        max-width: 1250px;
+        margin: -80px auto;
+    }
+
+    .btn-ftr-1 {
+        text-align: center;
+    }
+
+    .btn-ftr-1 img {
+        max-width: 600px;
+        width: 80%;
+    }
+
+    .btn-ftr-1 p {
+        text-align: center;
+        padding-top: 25px;
+        font-size: 20px;
+        font-family: 'Sawarabi Gothic', sans-serif;
+        letter-spacing: 1px;
+        line-height: 2;
+    }
+
+    .btn-ftr-2-3 {
+        max-width: 450px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .btn-ftr-2-3 img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .btn-ftr-4 {
+        margin-top: 35px;
         text-align: center;
     }
 
@@ -839,6 +1598,10 @@ body {
 
     #navbar ul li {
         padding: 0 40px;
+    }
+
+    #navbar a {
+        font-size: 20px;
     }
 
     #family {
@@ -898,9 +1661,17 @@ body {
         padding-top: 45px;
     }
 
+    /* mama papa */
+
     #mama-papa {
         height: 2060px;
         margin-top: -200px;
+    }
+
+    #mama-papa h1 img {
+        width: 80%;
+        width: 70%;
+        margin-top: -10px;
     }
 
     .collage-1 {
@@ -965,8 +1736,13 @@ body {
     }
 
     /* hotel camp */
+    #camp-hotel {
+        height: 1425px;
+    }
+
     .camp-htl-box {
         width: 100%;
+        margin-top: 100px;
         margin-left: 50px;
     }
 
@@ -998,7 +1774,90 @@ body {
         display: flex;
         position: absolute;
         gap: 50px;
-        margin-left: 50px;
+        top: 75%;
+        left: 65px;
     }
 
+    /* bufe */
+    #bufe h1 {
+        top: 80px;
+        height: 3100px;
+    }
+
+    #bufe h1 img {
+        width: 90%;
+    }
+
+    .swiper-bufe {
+        height: 600px;
+        top: 330px;
+    }
+
+    .honbun-bufe {
+        width: 100%;
+        font-size: 23px;
+    }
+
+    .swiper-btn-bufe {
+        width: 100%;
+        bottom: 180px;
+    }
+
+    .honbun-bufe {
+        margin: 0 auto;
+    }
+
+    .review-wrapper {
+        width: 100%;
+        margin: 120px auto;
+    }
+
+    .line-top {
+        width: 100%;
+    }
+
+    .review-bufe h3 {
+        font-size: 24px;
+    }
+
+    .honbun-review {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .honbun-review p {
+        font-size: 22px;
+        padding: 50px 70px;
+    }
+
+    .line-bttm {
+        width: 100%;
+    }
+
+    /* footer */
+    #foote {
+        margin: 0 auto;
+    }
+
+    .btn-ftr-1 img {
+        width: 100%;
+    }
+
+    .btn-ftr-1 p {
+        font-size: 22px;
+    }
+
+    .btn-ftr-2-3 {
+        max-width: 1250px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 65px;
+    }
+
+    .btn-ftr-4 {
+        margin-top: 80px;
+
+    }
 }
