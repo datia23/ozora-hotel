@@ -84,45 +84,57 @@ body {
         max-width: 262px;
     }
 
-    #family p {
+    #family .swiper p {
         font-family: 'Kiwi Maru', serif;
-        font-size: 8px;
+        font-size: 12px;
         opacity: 90%;
+        padding-top: 15px;
     }
 
     /* swiper */
     .swiper {
         max-width: 1200px;
         width: 70%;
-        height: 35%;
-        padding-top: 25%;
+        height: 50%;
+        padding-top: 30%;
     }
 
     .swiper-slide {
         text-align: left;
-        line-height: 2.5;
+        line-height: 2;
         gap: 20px;
         align-items: center;
 
-        /* Center slide text vertically */
-
+        /* Center slide text vertically
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center; */
     }
 
     .swiper-slide img {
-        max-width: 1200px;
         height: auto;
         width: 100%;
     }
 
+
     .swiper-pagination-bullet-active {
         background-color: #f59bb3;
+
     }
 
     /*plan hotel*/
     .htl-btn-wrapper {
         width: 100%;
         max-width: 1132px;
-        margin: 150px auto;
+        margin-top: 20px;
     }
 
     .plan-htl-1 {
@@ -130,52 +142,59 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+        max-width: 1373px;
         width: 80%;
-        height: 234px;
+        height: auto;
         margin: 0px auto;
-
+        padding: 15px 25px;
     }
 
     .plan-htl-1 p {
         text-align: center;
         color: #ac476e;
-        font-size: 24px;
-        font-weight: 600;
-        font-family: 'Mochiy Pop P One', sans-serif;
-        padding-top: 60px;
+        font-size: 4px;
+        font-family: 'Zen Maru Gothic', sans-serif;
         line-height: 1.5;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
 
     .plan-htl-1 .button {
         text-align: center;
-        margin-top: 10px;
+    }
+
+    .plan-htl-1 .button img {
+        max-width: 305px;
+        width: 40%;
     }
 
     .plan-htl-2 {
         background-image: url('../img/plan2-htl.png');
         background-repeat: no-repeat;
         background-position: center;
+        max-width: 1373px;
         width: 80%;
-        height: 234px;
+        height: auto;
         margin: 0px auto;
+        padding: 15px 25px;
         background-size: contain;
     }
 
     .plan-htl-2 p {
         text-align: center;
-        color: #7e3447;
-        font-size: 24px;
-        font-weight: 600;
-        font-family: 'Mochiy Pop P One', sans-serif;
-        padding-top: 60px;
+        color: #ac476e;
+        font-size: 8px;
+        font-family: 'Sawarabi Gothic', sans-serif;
         line-height: 1.5;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
 
     .plan-htl-2 .button {
         text-align: center;
-        margin-top: 10px;
+    }
+
+    .plan-htl-2 .button img {
+        max-width: 305px;
+        width: 40%;
     }
 
     .button img:hover {
@@ -187,84 +206,67 @@ body {
 
     #mama-papa {
         position: relative;
-        background-image: url('../img/bg-mama.png');
+        background-image: url('../img/bg-mama-sp.png');
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 1650px;
-        margin-top: 0;
+        height: 1498px;
+        margin-top: -60px;
     }
 
     #mama-papa h1 img {
         margin-left: 14%;
         max-width: 575px;
-        width: 50%;
-        margin-top: 30px;
-
+        width: 55%;
+        margin-top: 10px;
     }
 
     .collage-bby {
-        width: 90%;
+        width: 80%;
         max-width: 1150px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .collage-bby div {
-        width: 40%;
+        width: 80%;
         position: relative;
     }
 
     .collage-bby div img:first-child {
         width: 100%;
-        border: dashed #37212b 2px;
-        padding: 15px;
+        border: dashed #37212b 1px;
+        padding: 10px;
+        margin-top: 25px;
     }
 
     .collage-bby div img:nth-child(2) {
         position: absolute;
-    }
-
-    .collage-1 {
-        order: 2;
-        margin-top: -15px;
-    }
-
-    .collage-2 {
-        order: 1;
-        margin-top: 30px;
-    }
-
-    .collage-3 {
-        order: 4;
-    }
-
-    .collage-4 {
-        order: 3;
-        margin-top: 45px;
+        width: 40%;
+        z-index: 1;
     }
 
     /* decor */
     .collage-1 img {
-        top: -55px;
-        right: -86px;
+        top: -17px;
+        right: -62px;
     }
 
     .collage-2 img {
-        top: -66px;
-        left: -84px;
+        top: -5px;
+        left: -50px;
     }
 
     .collage-3 img {
-        bottom: -15px;
-        right: -92px;
+        bottom: -27px;
+        right: -63px;
     }
 
     .collage-4 img {
-        bottom: -44px;
-        left: -52px;
+        bottom: -23px;
+        left: -37px;
     }
 
     /* .collage-1 img {
@@ -884,22 +886,21 @@ body {
         max-width: 262px;
     }
 
-    #family p {
+    #family .swiper-slide p {
         font-family: 'Kiwi Maru', serif;
         font-size: 18px;
         opacity: 90%;
+        padding-top: 0;
     }
 
     /* swiper */
     .swiper {
         width: 100%;
+        height: 35%;
     }
 
     .swiper-slide {
-        text-align: left;
-        line-height: 2.5;
         gap: 25px;
-        align-items: center;
 
         /* Center slide text vertically */
         display: -webkit-box;
@@ -917,7 +918,6 @@ body {
     }
 
     .swiper-slide img {
-        height: auto;
         width: 45%;
     }
 
@@ -927,30 +927,18 @@ body {
 
     /*plan hotel*/
     .htl-btn-wrapper {
-        width: 100%;
-        max-width: 1132px;
         margin: 150px auto;
+        width: 80%;
     }
 
     .plan-htl-1 {
-        background-image: url('../img/plan1-htl.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
         width: 80%;
-        height: 234px;
-        margin: 0px auto;
 
     }
 
     .plan-htl-1 p {
-        text-align: center;
-        color: #ac476e;
-        font-size: 24px;
-        font-weight: 600;
+        font-size: 16px;
         font-family: 'Mochiy Pop P One', sans-serif;
-        padding-top: 60px;
-        line-height: 1.5;
         letter-spacing: 3px;
     }
 
@@ -959,24 +947,18 @@ body {
         margin-top: 10px;
     }
 
+    .plan-htl-1 .button img {
+        width: 50%;
+    }
+
     .plan-htl-2 {
-        background-image: url('../img/plan2-htl.png');
-        background-repeat: no-repeat;
-        background-position: center;
         width: 80%;
-        height: 234px;
-        margin: 0px auto;
-        background-size: contain;
+        margin-top: 50px;
     }
 
     .plan-htl-2 p {
-        text-align: center;
-        color: #7e3447;
-        font-size: 24px;
-        font-weight: 600;
+        font-size: 16px;
         font-family: 'Mochiy Pop P One', sans-serif;
-        padding-top: 60px;
-        line-height: 1.5;
         letter-spacing: 3px;
     }
 
@@ -990,48 +972,43 @@ body {
         transition: 0.5s;
     }
 
+    .plan-htl-1 .button img {
+        width: 30%;
+    }
+
+    .plan-htl-2 .button img {
+        width: 30%;
+    }
+
     /*mama papa*/
 
     #mama-papa {
-        position: relative;
         background-image: url('../img/bg-mama.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
         height: 1650px;
         margin-top: -280px;
     }
 
     #mama-papa h1 img {
-        margin-left: 14%;
-        max-width: 575px;
         width: 50%;
         margin-top: 30px;
-
     }
 
     .collage-bby {
         width: 90%;
-        max-width: 1150px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
     }
 
     .collage-bby div {
         width: 40%;
-        position: relative;
     }
 
     .collage-bby div img:first-child {
-        width: 100%;
         border: dashed #37212b 2px;
         padding: 15px;
     }
 
     .collage-bby div img:nth-child(2) {
-        position: absolute;
+        width: 100%;
     }
 
     .collage-1 {
@@ -1310,6 +1287,7 @@ body {
         position: absolute;
         top: 65%;
         left: 18%;
+        overflow-x: hidden;
     }
 
     .plan-camp-1 {
@@ -1606,7 +1584,7 @@ body {
         padding-top: 21%;
     }
 
-    #family p {
+    #family .swiper-slide p {
         font-size: 26px;
     }
 
@@ -1620,20 +1598,22 @@ body {
 
     .plan-htl-1 {
         width: 100%;
+        padding: 35px;
 
     }
 
     .plan-htl-2 {
         width: 100%;
         margin-top: 80px;
+        padding: 35px;
     }
 
     .plan-htl-1 p {
-        padding-top: 45px;
+        font-size: 28px;
     }
 
     .plan-htl-2 p {
-        padding-top: 45px;
+        font-size: 28px;
     }
 
     /* mama papa */
@@ -1754,9 +1734,12 @@ body {
     }
 
     /* bufe */
+    #bufe {
+        height: 3000px;
+    }
+
     #bufe h1 {
         top: 80px;
-        height: 3100px;
     }
 
     #bufe h1 img {
