@@ -9,6 +9,8 @@
     <title>大空ホテルカンダ神保町</title>
 
     <!-- Link Swiper's CSS -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,13 +20,44 @@
     <div class="logo">
         <img class="pc" src="img/logo.png" width="80px" height="auto">
         <img class="sp" src="img/logo.png" style="width: 30px; height: auto;">
-        <img class="sp  navbar-sp" src="">
-        <div class="navbar-sp sp">
-            <a href="">
-                <img src="img/navbar-sp.png">
-            </a>
+
+        <div class="sp navbar-sp">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide menu">
+                    <ul>
+                        <li>
+                            <a href="#family">
+                                充実のホテル滞在
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#mama-papa">
+                                ママ・パパも安心
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#camp-hotel">
+                                ホテルでキャンプ体験
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#bufe">
+                                最高のブフェー
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide content">
+                    <div class="menu-button">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
     <div id="top">
         <h1>
             <img class="pc" src="img/title.png" alt="大空ホテル
@@ -374,8 +407,8 @@
                     <p class="pc">※クーポン取得ページにてクーポンの使用条件とご利用上の注意<br>
                         をご確認ください。クーポンには配布期間が設けられています。</p>
 
-                        <p class="sp">※クーポン取得ページにてクーポンの使用条件とご利用上の注意
-                            をご確認ください。クーポンには配布期間が設けられています。</p>
+                    <p class="sp">※クーポン取得ページにてクーポンの使用条件とご利用上の注意
+                        をご確認ください。クーポンには配布期間が設けられています。</p>
                 </div>
                 <div class="btn-ftr-2-3">
                     <a href="" target="_blank">
@@ -462,47 +495,42 @@
                 swiper: swiper,
             },
         });
+    </script>
 
-        var falling = true;
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-        TweenLite.set("#container", { perspective: 600 })
-        //TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
 
-        var total = 10;
-        var container = document.getElementById("container"), w = window.innerWidth, h = window.innerHeight;
-
-        for (i = 0; i < total; i++) {
-            var Div = document.createElement('div');
-            var Div2 = document.createElement('div');
-            var Div3 = document.createElement('div');
-            TweenLite.set(Div, { attr: { class: 'dot' }, x: R(0, w), y: R(-200, -150), z: R(-200, 200), xPercent: "-50%", yPercent: "-50%" });
-            TweenLite.set(Div2, { attr: { class: 'dot2' }, x: R(0, w), y: R(-200, -150), z: R(-200, 200), xPercent: "-50%", yPercent: "-50%" });
-            TweenLite.set(Div3, { attr: { class: 'dot3' }, x: R(0, w), y: R(-200, -150), z: R(-200, 200), xPercent: "-50%", yPercent: "-50%" });
-            container.appendChild(Div);
-            container.appendChild(Div2);
-            container.appendChild(Div3);
-            animm(Div);
-            animm2(Div2);
-            animm3(Div3);
-        }
-
-        function animm(elm) {
-            TweenMax.to(elm, R(6, 15), { y: h + 100, ease: Linear.easeNone, repeat: -1, delay: -15 });
-            TweenMax.to(elm, R(4, 8), { x: '+=100', rotationZ: R(0, 180), repeat: -1, yoyo: true, ease: Sine.easeInOut });
-            TweenMax.to(elm, R(2, 8), { repeat: -1, yoyo: true, ease: Sine.easeInOut, delay: -5 });
+    <!-- Initialize Swiper -->
+    <script>
+        var menuButton = document.querySelector('.menu-button');
+        var openMenu = function () {
+            swiper.slidePrev();
         };
-        function animm2(elm) {
-            TweenMax.to(elm, R(6, 15), { y: h + 100, ease: Linear.easeNone, repeat: -1, delay: -25 });
-            TweenMax.to(elm, R(4, 8), { x: '+=100', rotationZ: R(0, 180), repeat: -1, yoyo: true, ease: Sine.easeInOut });
-            TweenMax.to(elm, R(2, 8), { repeat: -1, yoyo: true, ease: Sine.easeInOut, delay: -5 });
-        };
-        function animm3(elm) {
-            TweenMax.to(elm, R(6, 15), { y: h + 100, ease: Linear.easeNone, repeat: -1, delay: -5 });
-            TweenMax.to(elm, R(4, 8), { x: '+=100', rotationZ: R(0, 180), repeat: -1, yoyo: true, ease: Sine.easeInOut });
-            TweenMax.to(elm, R(2, 8), { repeat: -1, yoyo: true, ease: Sine.easeInOut, delay: -5 });
-        };
-
-        function R(min, max) { return min + Math.random() * (max - min) };
+        var swiper = new Swiper('.navbar-sp', {
+            slidesPerView: 'auto',
+            initialSlide: 1,
+            resistanceRatio: 0,
+            slideToClickedSlide: true,
+            on: {
+                slideChangeTransitionStart: function () {
+                    var slider = this;
+                    if (slider.activeIndex === 0) {
+                        menuButton.classList.add('cross');
+                        // required because of slideToClickedSlide
+                        menuButton.removeEventListener('click', openMenu, true);
+                    } else {
+                        menuButton.classList.remove('cross');
+                    }
+                },
+                slideChangeTransitionEnd: function () {
+                    var slider = this;
+                    if (slider.activeIndex === 1) {
+                        menuButton.addEventListener('click', openMenu, true);
+                    }
+                },
+            },
+        });
     </script>
 
 </body>
