@@ -120,10 +120,8 @@ body {
     }
 
     .swiper-slide img {
-        height: auto;
         width: 100%;
     }
-
 
     .swiper-pagination-bullet-active {
         background-color: #f59bb3;
@@ -152,8 +150,8 @@ body {
     .plan-htl-1 p {
         text-align: center;
         color: #ac476e;
-        font-size: 4px;
-        font-family: 'Zen Maru Gothic', sans-serif;
+        font-size: 8px;
+        font-family: 'Sawarabi Gothic', sans-serif;
         line-height: 1.5;
         letter-spacing: 2px;
     }
@@ -245,14 +243,14 @@ body {
     .collage-bby div img:nth-child(2) {
         position: absolute;
         max-width: 125px;
-        width: 40%;
+        width: 30%;
         z-index: 1;
     }
 
     /* decor */
     .collage-1 img {
         top: -17px;
-        right: -62px;
+        right: -49px;
     }
 
     .collage-2 img {
@@ -261,8 +259,8 @@ body {
     }
 
     .collage-3 img {
-        bottom: -27px;
-        right: -63px;
+        bottom: -17px;
+        right: -42px;
     }
 
     .collage-4 img {
@@ -409,8 +407,8 @@ body {
         bottom: 101px;
         margin: 0 auto;
     }
-    
-        .swiper-btn-camp .swiper-button-next {
+
+    .swiper-btn-camp .swiper-button-next {
         color: #fbd1dc;
     }
 
@@ -522,7 +520,7 @@ body {
     #bufe h1 {
         text-align: center;
         position: absolute;
-        top: 70px;
+        top: 45px;
     }
 
     #bufe h1 img {
@@ -532,10 +530,11 @@ body {
     /* swiper bufe */
     .swiper-bufe {
         position: relative;
-        width: 760px;
-        height: 575px;
+        max-width: 760px;
+        width: 80%;
+        height: 216px;
         margin: 0 auto;
-        top: 250px;
+        top: 100px;
         overflow: hidden;
     }
 
@@ -566,25 +565,27 @@ body {
 
     .bufeSwiper2 .swiper-slide img {
         display: block;
-        width: 734px;
+        max-width: 734px;
+        width: 90%;
     }
 
     .bufeSwiper .swiper-slide img {
         display: block;
-        width: 225px;
+        max-width: 225px;
+        width: 85%;
     }
 
     .bufeSwiper .swiper-slide-thumb-active img {
-        border: solid #6775b8 3px;
-        padding: 8px;
+        border: solid #6775b8 1px;
+        padding: 3px;
     }
 
     .swiper-btn-bufe {
         position: relative;
         max-width: 950px;
-        width: 85%;
+        width: 100%;
         margin: 0 auto;
-        bottom: 245px;
+        bottom: 84px;
     }
 
     .swiper-btn-bufe .swiper-button-next,
@@ -822,12 +823,11 @@ body {
 
     #family h2 {
         top: 20%;
-        right: -5%;
+        right: 5%;
     }
 
     #family h2 img {
-        width: 60%;
-        max-width: 262px;
+        max-width: 180px;
     }
 
     #family .swiper-slide p {
@@ -1163,47 +1163,12 @@ body {
 
     /* swiper bufe */
     .swiper-bufe {
-        position: relative;
-        width: 760px;
+        top: 280px;
         height: 575px;
-        margin: 0 auto;
-        top: 250px;
-        overflow: hidden;
-    }
-
-    .bufeSwiper .swiper-wrapper {
-        position: relative;
-        bottom: 35%;
-        z-index: 1;
-        display: flex;
-        transition-property: transform;
-        box-sizing: content-box;
-    }
-
-    .swiper-bufe .swiper-slide {
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-
-    .bufeSwiper2 .swiper-slide img {
-        display: block;
-        width: 734px;
     }
 
     .bufeSwiper .swiper-slide img {
-        display: block;
-        width: 225px;
+        width: 100%;
     }
 
     .bufeSwiper .swiper-slide-thumb-active img {
@@ -1212,10 +1177,7 @@ body {
     }
 
     .swiper-btn-bufe {
-        position: relative;
-        max-width: 950px;
         width: 85%;
-        margin: 0 auto;
         bottom: 245px;
     }
 
@@ -1365,7 +1327,7 @@ body {
     }
 
     #family h2 img {
-        width: 100%;
+        max-width: 262px;
         top: 12%;
 
     }
@@ -1523,6 +1485,7 @@ body {
         height: 1235px;
     }
 
+    /* plan camp */
     .plan-camp-wrapper {
         display: flex;
         flex-wrap: nowrap;
@@ -1559,7 +1522,6 @@ body {
     }
 
 
-
     /* bufe */
     #bufe {
         height: 3000px;
@@ -1572,6 +1534,8 @@ body {
     #bufe h1 img {
         width: 90%;
     }
+
+    /* swiper bufe */
 
     .swiper-bufe {
         height: 600px;
