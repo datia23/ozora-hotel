@@ -402,6 +402,27 @@ body {
         margin-left: 0;
     }
 
+    .swiper-btn-camp {
+        position: relative;
+        max-width: 1235px;
+        width: 100%;
+        bottom: 101px;
+        margin: 0 auto;
+    }
+    
+        .swiper-btn-camp .swiper-button-next {
+        color: #fbd1dc;
+    }
+
+    .swiper-btn-camp .swiper-button-prev {
+        color: #fbd1dc;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        opacity: 0.2;
+    }
+
     .camp-caption {
         text-align: center;
         font-size: 12px;
@@ -429,9 +450,9 @@ body {
 
     .plan-camp-1 p {
         font-size: 8px;
-        padding: 20px 17px;
+        padding: 15px 17px;
         font-family: 'Klee One', cursive;
-        line-height: 1;
+        line-height: 1.5;
         font-weight: 200;
     }
 
@@ -443,12 +464,12 @@ body {
     .plan-camp-1 .button {
         position: absolute;
         bottom: 60%;
-        right: -35%;
+        left: 212px;
     }
 
     .plan-camp-1 .button img {
         max-width: 215px;
-        width: 35%;
+        width: 80%;
     }
 
     .plan-camp-2 {
@@ -461,9 +482,9 @@ body {
 
     .plan-camp-2 p {
         font-size: 8px;
-        padding: 20px 17px;
+        padding: 15px 17px;
         font-family: 'Klee One', cursive;
-        line-height: 1;
+        line-height: 1.5;
         font-weight: 200;
     }
 
@@ -473,9 +494,14 @@ body {
     }
 
     .plan-camp-2 .button {
-        margin-left: 377px;
-        margin-top: -97px;
+        position: absolute;
+        bottom: 10%;
+        left: 212px;
+    }
 
+    .plan-camp-2 .button img {
+        max-width: 215px;
+        width: 80%;
     }
 
     /* bufe */
@@ -781,7 +807,7 @@ body {
 
     #family {
         background-image: url('../img/bg-hotel.png');
-        height: 1725px;
+        height: 1570px;
         top: -150px;
     }
 
@@ -806,19 +832,20 @@ body {
 
     #family .swiper-slide p {
         font-family: 'Kiwi Maru', serif;
-        font-size: 18px;
+        font-size: 20px;
         opacity: 90%;
         padding-top: 0;
     }
 
     /* swiper */
     .swiper {
-        width: 100%;
+        width: 80%;
         height: 35%;
+        padding-top: 25%;
     }
 
     .swiper-slide {
-        gap: 25px;
+        gap: 30px;
 
         /* Center slide text vertically */
         display: -webkit-box;
@@ -836,7 +863,7 @@ body {
     }
 
     .swiper-slide img {
-        width: 45%;
+        width: 60%;
     }
 
     .swiper-pagination-bullet-active {
@@ -1044,28 +1071,11 @@ body {
     }
 
     .swiper-camp .swiper-slide img {
-        width: 80%;
+        width: 90%;
     }
 
     .swiper-btn-camp {
-        position: relative;
-        max-width: 1235px;
-        width: 100%;
         bottom: 155px;
-        margin: 0 auto;
-    }
-
-    .swiper-btn-camp .swiper-button-next {
-        color: #fbd1dc;
-    }
-
-    .swiper-btn-camp .swiper-button-prev {
-        color: #fbd1dc;
-    }
-
-    .swiper-button-next:hover,
-    .swiper-button-prev:hover {
-        opacity: 0.2;
     }
 
     .camp-caption {
@@ -1077,14 +1087,16 @@ body {
 
     /* plan camp */
     .plan-camp-wrapper {
-        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
         top: 65%;
-        left: 18%;
-        overflow-x: hidden;
     }
 
     .plan-camp-1 {
         height: 215px;
+        width: 80%;
     }
 
     .plan-camp-1 p {
@@ -1096,12 +1108,16 @@ body {
     }
 
     .plan-camp-1 .button {
-        margin-left: 375px;
-        margin-top: -96px;
+        left: 60%;
+    }
+
+    .plan-camp-1 .button img {
+        width: 100%;
     }
 
     .plan-camp-2 {
         height: 215px;
+        width: 80%
     }
 
     .plan-camp-2 p {
@@ -1113,9 +1129,11 @@ body {
     }
 
     .plan-camp-2 .button {
-        margin-left: 377px;
-        margin-top: -97px;
+        left: 60%;
+    }
 
+    .plan-camp-2 .button img {
+        width: 100%;
     }
 
     /* bufe */
@@ -1320,9 +1338,6 @@ body {
 
 
 @media only screen and (min-width: 1440px) {
-    .swiper-slide img {
-        width: auto;
-    }
 
     #navbar ul li {
         padding: 0 40px;
@@ -1360,11 +1375,15 @@ body {
     }
 
     #family .swiper-slide p {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .swiper-slide {
         gap: 50px;
+    }
+
+    .swiper-slide img {
+        width: 50%;
     }
 
     .htl-btn-wrapper {
@@ -1394,7 +1413,7 @@ body {
     /* mama papa */
 
     #mama-papa {
-        height: 2060px;
+        height: 2145px;
         margin-top: -200px;
     }
 
@@ -1485,7 +1504,7 @@ body {
     }
 
     .swiper-camp .swiper-slide img {
-        width: 50%;
+        width: 49%;
     }
 
     .swiper-btn-camp {
@@ -1506,11 +1525,40 @@ body {
 
     .plan-camp-wrapper {
         display: flex;
+        flex-wrap: nowrap;
         position: absolute;
         gap: 50px;
-        top: 75%;
-        left: 65px;
+        top: 77%;
+        left: 53px;
     }
+
+    .plan-camp-1 p {
+        font-size: 14px;
+    }
+
+    .plan-camp-2 p {
+        font-size: 14px;
+    }
+
+    .plan-camp-1 .button {
+        bottom: 30%;
+        left: 29%;
+    }
+
+    .plan-camp-2 .button {
+        bottom: 30%;
+        left: 81%;
+    }
+
+    .plan-camp-1 .button img {
+        width: 90%;
+    }
+
+    .plan-camp-2 .button img {
+        width: 90%;
+    }
+
+
 
     /* bufe */
     #bufe {
