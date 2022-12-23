@@ -206,9 +206,11 @@ body {
         position: relative;
         background-image: url('../img/bg-mama-sp.png');
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         width: 100%;
         height: 1498px;
+        margin: 0 auto;
         margin-top: -60px;
     }
 
@@ -507,7 +509,7 @@ body {
         background-image: url('../img/bg-bufe-footer-sp.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 1217px;
+        height: 1160px;
         position: relative;
     }
 
@@ -582,7 +584,7 @@ body {
         text-align: justify;
         font-family: 'Kiwi Maru', serif;
         font-size: 10px;
-        line-height: 2.5;
+        line-height: 1.5;
         border: dashed #6775b8 3px;
         border-radius: 15px;
         padding: 15px 13px;
@@ -597,12 +599,12 @@ body {
     }
 
     .review-bufe {
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .stars img {
         max-width: 345px;
-        width: 60%;
+        width: 45%;
     }
 
     .line-top {
@@ -656,14 +658,13 @@ body {
 
     .btn-ftr-1 img {
         max-width: 600px;
-        width: 80%;
-
+        width: 70%;
     }
 
     .btn-ftr-1 p {
         text-align: center;
-        padding-top: 25px;
-        font-size: 20px;
+        padding: 5px 67px;
+        font-size: 10px;
         font-family: 'Sawarabi Gothic', sans-serif;
         letter-spacing: 1px;
         line-height: 2;
@@ -671,23 +672,24 @@ body {
 
     .btn-ftr-2-3 {
         max-width: 450px;
+        width: 60%;
         margin: 0 auto;
         text-align: center;
-        margin-top: 35px;
+        margin-top: 10px;
     }
 
     .btn-ftr-2-3 img {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
 
     .btn-ftr-4 {
-        margin-top: 35px;
+        margin-top: 15px;
         text-align: center;
     }
 
     .btn-ftr-4 img {
-        width: 60%;
+        width: 75%;
     }
 
 
@@ -715,12 +717,12 @@ body {
         height: 1283px;
     }
 
-    #family {
+    /* #family {
         background-image: url('../img/bg-hotel.png');
         width: 100%;
         height: 1725px;
         top: -150px;
-    }
+    } */
 
     /* .dot {
         width: 35px;
@@ -916,6 +918,7 @@ body {
 
     #mama-papa {
         background-image: url('../img/bg-mama.png');
+        width: 100%;
         height: 1650px;
         margin-top: -280px;
     }
@@ -926,7 +929,7 @@ body {
     }
 
     .collage-bby {
-        width: 90%;
+        width: 80%;
         justify-content: space-around;
     }
 
@@ -1126,6 +1129,7 @@ body {
     /* bufe */
     #bufe {
         background-image: url('../img/bg-bufe-footer.jpg');
+        width: 100%;
         height: 2670px;
     }
 
@@ -1231,29 +1235,21 @@ body {
     }
 
     .btn-ftr-1 p {
-        text-align: center;
         padding-top: 25px;
         font-size: 20px;
-        font-family: 'Sawarabi Gothic', sans-serif;
-        letter-spacing: 1px;
-        line-height: 2;
     }
 
     .btn-ftr-2-3 {
-        max-width: 450px;
-        margin: 0 auto;
-        text-align: center;
+        width: 100%;
         margin-top: 35px;
     }
 
     .btn-ftr-2-3 img {
-        width: 100%;
         margin-bottom: 20px;
     }
 
     .btn-ftr-4 {
         margin-top: 35px;
-        text-align: center;
     }
 
     .btn-ftr-4 img {
@@ -1338,14 +1334,18 @@ body {
     /* mama papa */
 
     #mama-papa {
-        height: 2145px;
         margin-top: -200px;
     }
 
     #mama-papa h1 img {
-        width: 80%;
-        width: 70%;
-        margin-top: -10px;
+        width: 40%;
+        margin-top: -27px;
+        margin-left: 19%;
+    }
+
+    .collage-bby {
+        width: 60%;
+        justify-content: space-around;
     }
 
     .collage-1 {
@@ -1389,25 +1389,41 @@ body {
     }
 
     .lead-bby {
-        margin-top: 150px;
+        margin-top: 45px;
     }
 
     .lead-bby p {
-        padding: 55px 90px;
+        padding: 30px 90px;
         font-size: 23px;
         letter-spacing: 1px;
     }
 
+    .lead-bby {
+        max-width: 1100px;
+        height: 248px;
+    }
+
+    .plan-bby-wrapper {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .plan-bby {
         width: 100%;
-        margin: 80px auto;
+        margin: 0 auto;
     }
 
     .plan-bby p {
         color: #ac476e;
-        font-size: 32px;
+        font-size: 30px;
         padding-top: 60px;
     }
+
+    .plan-bby .button {
+        margin-top: 7px;
+    }
+
 
     /* hotel camp */
     #camp-hotel {
