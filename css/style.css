@@ -252,7 +252,7 @@ body {
     /* decor */
     .collage-1 img {
         top: -17px;
-        right: -49px;
+        right: -44px;
     }
 
     .collage-2 img {
@@ -508,8 +508,9 @@ body {
     #bufe {
         background-image: url('../img/bg-bufe-footer-sp.jpg');
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
-        height: 1160px;
+        height: 1400px;
         position: relative;
     }
 
