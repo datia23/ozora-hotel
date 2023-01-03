@@ -16,12 +16,43 @@
 </head>
 
 <body>
-    <!--top start-->
     <div class="logo">
-        <img class="pc" src="img/logo.png" width="80px" height="auto">
+        <img class="pc" src="img/logo.png" style="width:50px; height:auto;">
         <img class="sp" src="img/logo.png" style="width: 30px; height: auto;">
 
-        <div class="sp navbar-sp">
+        <!-- navbar sp -->
+        <div id="sidebar" class="sp">
+            <ul>
+                <li>
+                    <a href="#family">
+                        充実のホテル滞在
+                    </a>
+                </li>
+                <li>
+                    <a href="#mama-papa">
+                        ママ・パパも安心
+                    </a>
+                </li>
+                <li>
+                    <a href="#camp-hotel">
+                        ホテルでキャンプ体験
+                    </a>
+                </li>
+                <li>
+                    <a href="#bufe">
+                        最高のブフェー
+                    </a>
+                </li>
+            </ul>
+            <div class="toggle-btn" onclick="show()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+        <!-- <div class="sp navbar-sp">
             <div class="swiper-wrapper">
                 <div class="swiper-slide menu">
                     <ul>
@@ -53,11 +84,14 @@
                         <div class="bar"></div>
                         <div class="bar"></div>
                     </div>
+
                 </div>
             </div>
-        </div>
+        </div> -->
+
     </div>
-    
+
+    <!--top start-->
     <div id="top">
         <h1>
             <img class="pc" src="img/title.png" alt="大空ホテル
@@ -426,12 +460,18 @@
             </div>
         </div>
     </div>
+    <!-- bufe and footer end -->
 
 
 
 
 
-
+    <!-- sidebar navbar sp -->
+    <script>
+        function show() {
+            document.getElementById('sidebar').classList.toggle('active')
+        }
+    </script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -496,43 +536,6 @@
             },
         });
     </script>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-
-    <!-- Initialize Swiper -->
-    <script>
-        var menuButton = document.querySelector('.menu-button');
-        var openMenu = function () {
-            swiper.slidePrev();
-        };
-        var swiper = new Swiper('.navbar-sp', {
-            slidesPerView: 'auto',
-            initialSlide: 1,
-            resistanceRatio: 0,
-            slideToClickedSlide: true,
-            on: {
-                slideChangeTransitionStart: function () {
-                    var slider = this;
-                    if (slider.activeIndex === 0) {
-                        menuButton.classList.add('cross');
-                        // required because of slideToClickedSlide
-                        menuButton.removeEventListener('click', openMenu, true);
-                    } else {
-                        menuButton.classList.remove('cross');
-                    }
-                },
-                slideChangeTransitionEnd: function () {
-                    var slider = this;
-                    if (slider.activeIndex === 1) {
-                        menuButton.addEventListener('click', openMenu, true);
-                    }
-                },
-            },
-        });
-    </script>
-
 </body>
 
 </html>
