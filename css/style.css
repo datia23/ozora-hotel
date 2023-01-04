@@ -46,7 +46,7 @@ body {
         background: #fff;
         z-index: 0;
         right: -180px;
-        transition: 0.4s;
+        transition: 0.6s;
     }
 
     #sidebar.active {
@@ -65,7 +65,7 @@ body {
 
     #sidebar .toggle-btn {
         position: absolute;
-        top: 15px;
+        top: 7px;
         right: 200px;
     }
 
@@ -667,7 +667,7 @@ body {
     }
 
     .stars img {
-        max-width: 345px;
+        max-width: 500px;
         width: 45%;
     }
 
@@ -784,37 +784,6 @@ body {
         background-image: url('../img/top.jpg');
         height: 1283px;
     }
-
-    /* #family {
-        background-image: url('../img/bg-hotel.png');
-        width: 100%;
-        height: 1725px;
-        top: -150px;
-    } */
-
-    /* .dot {
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        background: url('../img/sakura-fall-1.png');
-        background-size: 100% 100%;
-    }
-
-    .dot2 {
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        background: url('../img/sakura-fall-2.png');
-        background-size: 100% 100%;
-    }
-
-    .dot3 {
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        background: url('../img/sakura-fall-3.png');
-        background-size: 100% 100%;
-    } */
 
 
     #top h1 img {
@@ -1495,12 +1464,12 @@ body {
 
     /* hotel camp */
     #camp-hotel {
-        height: 1425px;
+        height: 1100px;
     }
 
     .camp-htl-box {
         width: 100%;
-        margin-top: 100px;
+        margin: 60px;
     }
 
     .camp-htl-box h1 img {
@@ -1508,7 +1477,7 @@ body {
         width: 50%;
     }
 
-    .swiper-camp- {
+    .swiper-camp {
         width: 100%;
     }
 
@@ -1525,21 +1494,19 @@ body {
     }
 
     .camp-caption {
-        margin: 30px 60px;
-    }
-
-    #camp-hotel {
-        height: 1235px;
+        margin: 50px 60px;
+        font-size: 22px;
+        line-height: 2.5;
     }
 
     /* plan camp */
     .plan-camp-wrapper {
-        display: flex;
         flex-wrap: nowrap;
         position: absolute;
         gap: 50px;
-        top: 77%;
-        left: 53px;
+        top: 78%;
+        left: 90px;
+        width: 87%;
     }
 
     .plan-camp-1 p {
